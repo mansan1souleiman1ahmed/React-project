@@ -16,7 +16,9 @@ const App = () => {
 
     return (
         <div className={"App"}>
-            <div className={"App-title"}>{"Timers Demo"}</div>
+            <div className={"App-title"}>
+                <h1>{"Pomodoro"}</h1>
+            </div>
             <div className={"Timers"}>
                 <Pomodoro showModal={setModalShow} />
             </div>

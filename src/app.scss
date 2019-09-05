@@ -1,4 +1,107 @@
-body,
-html {
+.App {
     height: 100%;
+    background-image: url("./img/pomodoro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .App-title {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        h1 {
+            font-size: 90px;
+            text-align: center;
+        }
+    }
+
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        .time-rendering {
+            position: relative;
+            text-align: center;
+            font-size: 100px;
+            color: grey;
+            left: -34%;
+        }
+        .buttons {
+            .btn-start {
+                border: none;
+                margin: 2px;
+                background-color: #a5c6a1;
+                &:hover {
+                    background-color: #45eb03;
+                    font-weight: bold;
+                    opacity: 0.8;
+                }
+            }
+            .btn-stop {
+                border: none;
+                margin: 2px;
+                background-color: #dfae9c;
+                &:hover {
+                    background-color: #fc1b04;
+                    font-weight: bold;
+                    opacity: 0.8;
+                    border: none;
+                }
+            }
+            .btn-reset {
+                border: none;
+                margin: 2px;
+                background-color: #f0faad;
+                &:hover {
+                    background-color: #f3c611;
+                    font-weight: bold;
+                    opacity: 0.8;
+                    border: none;
+                }
+            }
+            .btn-plus {
+                border: none;
+                margin: 2px;
+                background-color: #bed1d0;
+                &:hover {
+                    background-color: #94f6ef;
+                    font-weight: bold;
+                    opacity: 0.8;
+                    border: none;
+                }
+            }
+            .btn-minus {
+                border: none;
+                margin: 2px;
+                background-color: #ffa500;
+                &:hover {
+                    background-color: #f38911;
+                    font-weight: bold;
+                    opacity: 0.8;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 780px) {
+    .App {
+        position: relative;
+        margin: 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+
+        .App-title {
+            position: absolute;
+            h1 {
+            }
+        }
+
+        .container {
+            position: absolute;
+        }
+    }
 }

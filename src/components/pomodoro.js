@@ -45,27 +45,48 @@ export default function Pomodoro(props) {
     }
     return (
         <React.Fragment>
-            {`${Math.floor(seconds / 60)
-                .toString()
-                .padStart(2, "0")}:${`${seconds % 60}`
-                .toString()
-                .padStart(2, "0")}`}
-            <button type={"button"} onClick={startTimer}>
-                {"Start"}
-            </button>
-            <button type={"button"} onClick={pauseTimer}>
-                {"Stop"}
-            </button>
-            <button type={"button"} onClick={resetTimer}>
-                {"Reset"}
-            </button>
-            <button type={"button"} onClick={incrementTimer}>
-                {" "}
-                {" + One minute"}
-            </button>
-            <button type={"button"} onClick={decrementTimer}>
-                {"- One minute"}
-            </button>
+            <div className={"container"}>
+                <div className={"time-rendering"}>
+                    {`${Math.floor(seconds / 60)
+                        .toString()
+                        .padStart(2, "0")}:${`${seconds % 60}`
+                        .toString()
+                        .padStart(2, "0")}`}
+                </div>
+                <div className={"buttons"}>
+                    <button
+                        className={"btn-start"}
+                        type={"button"}
+                        onClick={startTimer}>
+                        {"Start"}
+                    </button>
+                    <button
+                        className={"btn-stop"}
+                        type={"button"}
+                        onClick={pauseTimer}>
+                        {"Stop"}
+                    </button>
+                    <button
+                        className={"btn-reset"}
+                        type={"button"}
+                        onClick={resetTimer}>
+                        {"Reset"}
+                    </button>
+                    <button
+                        className={"btn-plus"}
+                        type={"button"}
+                        onClick={incrementTimer}>
+                        {" "}
+                        {" + One minute"}
+                    </button>
+                    <button
+                        className={"btn-minus"}
+                        type={"button"}
+                        onClick={decrementTimer}>
+                        {"- One minute"}
+                    </button>
+                </div>
+            </div>
         </React.Fragment>
     );
 }
