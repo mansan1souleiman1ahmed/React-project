@@ -43,6 +43,7 @@ export default function Pomodoro(props) {
             setSeconds(seconds - 60);
         }
     }
+
     return (
         <React.Fragment>
             <div className={"container"}>
