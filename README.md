@@ -47,9 +47,11 @@
   A the begging add a comma to the line inside the scrips: 
   
          "test": "echo \"Error: no test specified\" && exit 1",
+         
   and then add the line:
-  
-   "build": "parcel build ./src/index.html"
+          
+          "dev": "parcel ./src/index.html",
+          "build": "parcel build ./src/index.html"
    
    So you get the following result inside the package.json.
    
