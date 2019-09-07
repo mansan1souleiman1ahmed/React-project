@@ -65,7 +65,7 @@
     "build": "parcel build ./src/index.html"
     },
 
-## 9 Before publishing in Github:
+### 9 Before publishing in Github:
  
   => Create (at the Root) gitignore file where you put all the files and folders that should not be published.
   
@@ -83,7 +83,7 @@
   
   package-lock.json
 
-## 10 When pushing on your github:
+### 10 When pushing on your github:
  
  git add .
  
