@@ -64,8 +64,26 @@
     "dev": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"
     },
+
+## 9 Before publishing in Github:
  
- ## 10 When pushing on your github:
+  => Create (at the Root) gitignore file where you put all the files and folders that should not be published.
+  
+  => Inside the git ignore put the following folders and files.
+  
+  node_modules
+  
+  .vscode
+  
+  dist
+  
+  .cache
+  
+  .DS_Store
+  
+  package-lock.json
+
+## 10 When pushing on your github:
  
  git add .
  
