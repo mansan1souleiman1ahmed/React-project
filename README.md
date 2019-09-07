@@ -1,5 +1,4 @@
 # React-project
-# React-PRIVATE-Project
 
 ## SET UP
 
