@@ -86,10 +86,7 @@
 ### 10 When pushing on your github:
  
  git add .
- 
- git commit -m "Deploying a test page"
- 
- git commit -m "Deploying a test page" –no-verify
+ git commit -m "Deploying a test page" --no-verify
  
  /!\ Here you need to indicate to Eslint to not verify when pushing for the FIRST. So you don't add no-verify to your commit
  each you push).
