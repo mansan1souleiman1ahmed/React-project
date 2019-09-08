@@ -18,7 +18,7 @@
  npm init -y (It installs the package.json in your Repo. The y means to install it locally on the Repo).
  
  For Parcel run on the terminal :
- pm install parcel-bundler -D (You got node_modules/  package-lock.json).
+ npm install parcel-bundler -D (You got node_modules/  package-lock.json).
 
 ### 4 Create the React-Project => Inside the Repo run:
  
