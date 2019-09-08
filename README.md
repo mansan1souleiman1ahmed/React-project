@@ -94,9 +94,13 @@
 ### 10 When pushing your Repo on github:
  
  git add .
+ 
  git commit -m "Name of your commit" --no-verify
  
  /!\ Here you need to indicate to Eslint to not verify when pushing for the FIRST. So you don't add no-verify to your commit
  each you push).
  
  git push
+
+ /!\ It might ask you to run this command " git push --set-upstream origin initial-push  " in the terminal when pushing for the first time. JUST DO IT. It won't ask you to run it the other times you want to push things.
+ 
