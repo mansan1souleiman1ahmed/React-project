@@ -67,7 +67,7 @@
 
 ### 9 Before publishing in Github:
  
-  => Create (at the Root) gitignore file where you put all the files and folders that should not be published.
+  => Create (at the Root) gitignore file where you put all the files and folders that should not be publish.
   
   => Inside the git ignore put the following folders and files.
   
@@ -82,11 +82,19 @@
   .DS_Store
   
   package-lock.json
+  
+  =>Inside the Repo run:
+  
+  git rm -r --cached .
+  
+ /!\ It will only remove the cached files inside your Repo. So you will be able to publish everything but the ignored files
+  without deleting anything from your local Repo. 
+  
 
-### 10 When pushing on your github:
+### 10 When pushing your Repo on github:
  
  git add .
- git commit -m "Deploying a test page" --no-verify
+ git commit -m "Name of your commit" --no-verify
  
  /!\ Here you need to indicate to Eslint to not verify when pushing for the FIRST. So you don't add no-verify to your commit
  each you push).
