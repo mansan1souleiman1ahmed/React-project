@@ -10,7 +10,6 @@
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 
     .App-title {
-
         grid-column-start: 2;
         grid-row-start: 5;
 
@@ -35,7 +34,6 @@
                 grid-column-start: 2;
                 grid-row-start: 5;
                 text-align: center;
-
 
                 .btn-start {
                     border: none;
@@ -94,7 +92,6 @@
                     background-color: #ffa500;
 
                     &:hover {
-
                         background-color: #f38911;
                         font-weight: bold;
                         opacity: 0.8;
@@ -113,7 +110,6 @@
         flex-direction: column;
 
         .Timers {
-
             .container {
                 display: flex;
                 flex-wrap: wrap;
@@ -123,9 +119,23 @@
                     display: flex;
                     flex-wrap: wrap;
                     flex-direction: column;
-
                 }
             }
+        }
+    }
+}
+@media screen and (max-width: 360px) {
+    .App-title {
+        h1 {
+            font-size: 65px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .App-title {
+        h1 {
+            font-size: 45px !important;
         }
     }
 }
